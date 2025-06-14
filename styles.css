@@ -1,0 +1,909 @@
+.portfolio-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-color: #000000 !important;
+}
+
+/* header section */
+
+/* header end */
+
+/* home-section */
+
+.carousel-container {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    position: static !important;
+}
+
+.home-item {
+    position: relative;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+.home-item-wrap {
+    width: 100%;
+    position: relative;
+}
+
+.home-item-wrap img {
+    width: 100%;
+}
+
+.home-item-content {
+    width: 90% !important;
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    color: white;
+    font-size: 118px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.home-item-content p {
+    width: 100% !important;
+    float: left;
+    font-size: 15%;
+    text-align: left;
+    font-weight: 400;
+}
+/* home-section-end */
+
+
+
+/*-------------user-viewing----------*/
+#user-viewing {
+    background-color: #000000;
+    height: 500px !important;
+    margin-top: 50px;
+}
+
+.user-viewing-title-text {
+    float: left;
+    margin-left: 35px;
+    border-bottom: 0px;
+}
+
+.user-viewing-webtoon-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    float: right;
+    gap: 10px;
+}
+
+.user-viewing-webtoon-link a {
+    color: white !important;
+    font-size: 25px;
+    margin: 0px !important;
+    padding: 0px !important;
+    pointer-events: auto;
+}
+
+.user-viewing-webtoon-link img {
+    width: 12px;
+}
+
+.clients-slider {
+    overflow: visible !important;
+    z-index: -1;
+}
+
+.user-viewing-container {
+    width:  100% !important;
+}
+
+.user-viewing-wrapper {
+    width: 90% !important;
+    margin: 100px 0;
+    gap: 5px !important;
+    display: flex !important;
+}
+
+.user-viewing-item {
+  position: relative;
+  width: 240px !important;
+  height: 320px;
+  margin-right: 20px;
+}
+
+.user-viewing-item div {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+
+.user-viewing-item img {
+  width: 240px;
+  height: 320px;
+  border-radius: 10px;
+}
+
+.user-viewing-slide {
+    position: relative;
+    z-index: 1;
+    overflow: visible !important;
+    flex: 0 0 240px;
+}
+
+.user-viewing-slide:hover {
+    z-index: 9999 !important;
+}
+
+.user-viewing-item-hover {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    pointer-events: none; /* hover 상태가 아닐 때 클릭 방지 */
+}
+
+.user-viewing-slide:hover .user-viewing-item-hover {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.user-viewing-slide:hover .user-viewing-item {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.user-viewing-item-hover {
+    display: flex;
+    width: 540px !important;
+    height: 360px;
+    color: white;
+    font-size: 12px;
+    background-color: rgba(41, 41, 41, 0.9);
+    border-radius: 10px;
+    position: absolute;
+    top: -20px;
+    z-index: 3000 !important;
+}
+
+.user-viewing-item-hover-poster {
+    position: relative;
+    width: 270px;
+    height: 360px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.user-viewing-item-hover-poster img {
+    width: 270px;
+    height: 360px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.user-viewing-item-hover-poster div {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+.user-viewing-item-hover-content {
+    padding: 25px;
+    
+}
+
+.user-viewing-item-hover-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-viewing-item-hover-content-badges {
+    float: none;
+}
+
+.user-viewing-item-hover-content-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 220px;
+    bottom: 20px;
+}
+
+.user-viewing-item-hover-content-footer img:hover{
+    transform: scale(1.2);
+}
+
+.user-viewing-item-hover-content-footer div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+
+/*-----------user-viewing-end----------------
+
+
+
+/*-------------realtime-popular-viewing----------*/
+#realtime-popular {
+    background-color: #000000;
+    height: 500px !important;
+    margin-top: 50px;
+}
+
+.realtime-popular-title-text {
+    float: left;
+    margin-left: 35px;
+    border-bottom: 0px;
+}
+
+.clients-slider {
+    overflow: visible !important;
+}
+
+.realtime-popular-container {
+    width:  100% !important;
+}
+
+.realtime-popular-wrapper {
+    width: 90% !important;
+    margin: 100px 0;
+    gap: 200px !important;
+    display: flex !important;
+}
+
+.realtime-popular-item {
+  position: relative;
+  width: 240px !important;
+  height: 320px;
+  margin-right: 20px;
+}
+
+.realtime-popular-item div {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+
+.realtime-popular-item img {
+  width: 240px;
+  height: 320px;
+  border-radius: 10px;
+}
+
+.realtime-popular-number-img {
+    position: absolute;
+    left: -200px;
+    z-index: -3;
+}
+
+.realtime-popular-webtoon-img {
+  width: 240px;
+  height: 320px;
+  border-radius: 10px;
+}
+
+.realtime-popular-slide {
+    position: relative;
+    z-index: 1;
+    overflow: visible !important;
+    flex: 0 0 240px;
+}
+
+.realtime-popular-slide:hover {
+    z-index: 9999 !important;
+}
+
+.realtime-popular-item-hover {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    pointer-events: none; /* hover 상태가 아닐 때 클릭 방지 */
+}
+
+.realtime-popular-slide:hover .realtime-popular-item-hover {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.realtime-popular-slide:hover .realtime-popular-item {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.realtime-popular-item-hover {
+    display: flex;
+    width: 540px !important;
+    height: 360px;
+    color: white;
+    font-size: 12px;
+    background-color: rgba(41, 41, 41, 0.9);
+    border-radius: 10px;
+    position: absolute;
+    top: -20px;
+    z-index: 3000 !important;
+}
+
+.realtime-popular-item-hover-poster {
+    position: relative;
+    width: 270px;
+    height: 360px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.realtime-popular-item-hover-poster img {
+    width: 270px;
+    height: 360px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.realtime-popular-item-hover-poster div {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+.realtime-popular-item-hover-content {
+    padding: 25px;
+    
+}
+
+.realtime-popular-item-hover-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.realtime-popular-item-hover-content-badges {
+    float: none;
+}
+
+.realtime-popular-item-hover-content-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 220px;
+    bottom: 20px;
+}
+
+.realtime-popular-item-hover-content-footer img:hover{
+    transform: scale(1.2);
+}
+
+.realtime-popular-item-hover-content-footer div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# BESTSEELER START (Testimonials) 
+--------------------------------------------------------------*/
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: visible !important;
+}
+
+#testimonials .section-header {
+  padding-bottom: 10px;
+}
+
+
+.bestseller-title-text {
+    float: left;
+    margin-left: 35px;
+}
+
+.bestseller-slider {
+  width: 590px;
+}
+
+.testimonials .container {
+  width: 100%; 
+  max-width: 100%;
+}
+
+.testimonial-wrap {
+  width: 490px;
+  height: 320px;
+}
+
+.testimonials .testimonial-item-bestseller {
+  display: flex;
+  gap: 50px;
+  box-sizing: content-box;
+  padding: 25px;
+  margin: 30px 15px;
+  width: 490px;
+  height: 320px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.testimonials .testimonial-item-bestseller .testimonial-img {
+  width: 174px !important;
+  height: 240px !important;
+  border-radius: 0 !important;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.testimonial-content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials .testimonial-item-bestseller h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 25px 0 5px 0;
+  color: #111;
+  text-align: left;
+}
+
+.testimonials .testimonial-item-bestseller h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+  text-align: left;
+}
+
+.testimonial-star-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.testimonials .testimonial-item-bestseller .quote-icon-left,
+.testimonials .testimonial-item-bestseller .quote-icon-right {
+  color: #fceaea;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item-bestseller .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item-bestseller .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item-bestseller p {
+  font-style: normal !important;
+  margin: 10px 0px 10px 0px !important;
+  text-align: left;
+  font-size: 12px;
+}
+
+.testimonial-content-badges {
+    float: left;
+}
+
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #e03a3c;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #e03a3c;
+}
+
+
+/* WEBTOON PAGE */
+#about {
+    height: 500px;
+}
+
+#about .about-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .about-cols {
+    gap: 0px;
+}
+
+.webtoon-search-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: justify;
+    align-items: center;
+    width:50%;
+}
+
+.webtoon-search-container input,
+.webtoon-search-container button {
+    border-radius: 20px;
+}
+
+
+/* WEBTOON PAGE END */
+
+
+
+
+/* skill-section */
+.skills-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.skills-container .progress {
+    border-radius: 20px !important;
+}
+
+.skills-container .progress-bar {
+    border-radius: 20px;
+        color: black;
+
+}
+
+/* skill-section-end */
+
+
+
+/* login-page */
+.login-container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.php-email-form {
+    border-radius: 10px;
+    padding: 50px 130px 20px!important;
+}
+
+/* login-page-end */
+    
+/* signup-page */
+.signup-container {
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.signup-container h3 {
+    color: white !important;
+}
+
+
+/* signup-page-end */
+
+
+/* SEARCH HOT PAGE */
+#portfolio {
+    background-color: black;
+    margin-top: 100px;
+}
+
+#portfolio .section-title {
+    color: white;
+}
+
+#portfolio .section-sub-title {
+    color: white;
+}
+
+.portfolio-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px !important;
+    height: 40px !important;
+    background-color: RGB(77, 77, 77) !important;
+}
+
+.portfolio-info p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white !important;
+    font-size: 15px !important;
+}
+
+.portfolio-container {
+    display: flex !important;
+    gap: 50px !important;
+    flex-wrap: wrap !important;
+}
+
+.portfolio-item {
+    width: 250px;
+}
+
+.portfolio-wrap {
+    width: 180px !important;
+    height: 360px !important;
+    flex: 0 0 240px !important;
+
+}
+
+
+.portfolio-wrap figure {
+    height: 240px !important;
+}
+
+.portfolio-wrap figure > img {
+    height: 100% !important;
+}
+
+.portfolio-info .testimonial-star-rating span {
+    color: white;
+    font-size: 10px !important;
+} 
+/* SEARCH HOT PAGE END */
+
+
+
+/* BOOK PAGE START */
+/* home-section */
+
+
+.book-home-item-content {
+    width: 90% !important;
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+    color: white;
+    font-size: 118px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    gap: 10%;
+}
+
+.book-home-item-content p {
+    width: 100% !important;
+    float: left;
+    font-size: 15%;
+    text-align: left;
+    font-weight: 400;
+}
+.book-home-item-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-home-item-content img {
+    width: 389px;
+}
+/* home-section-end */
+
+/* BOOK PAGE END */
+
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+
+#pricing {
+    margin-top: 100px;
+}
+
+#pricing .section-title {
+    color: white;
+    text-align: center;
+}
+
+.pricing .box {
+  padding: 20px;
+  background: #f9f9f9;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #f9f9f9;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pricing .box h3 {
+  font-weight: 400;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #493c3e;
+}
+
+.pricing .box h4 {
+  font-size: 42px;
+  color: RGB(189, 0, 0);
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.pricing .box h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing .box h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing .box ul {
+  padding: 0;
+  list-style: none;
+  color: #493c3e;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.pricing .box ul li {
+  padding-bottom: 16px;
+}
+
+.pricing .box ul i {
+  color: RGB(189, 0, 0);
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing .box ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .box .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+
+.pricing .box .btn-buy {
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 50px;
+  border: 2px solid RGB(189, 0, 0);
+  color: RGB(189, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .box .btn-buy:hover {
+  background: RGB(189, 0, 0);
+  color: #fff;
+}
+
+.pricing .recommended {
+  border-color: RGB(189, 0, 0);
+}
+
+.pricing .recommended .btn-buy {
+  background: RGB(189, 0, 0);
+  color: #fff;
+}
+
+.pricing .recommended .btn-buy:hover {
+  background: RGB(189, 0, 0);
+  border-color: RGB(189, 0, 0);
+}
+
+.pricing .recommended-badge {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 13px;
+  padding: 3px 25px 6px 25px;
+  background: #fce6ea;
+  color: RGB(189, 0, 0);
+  border-radius: 50px;
+}
+
+/* PRICE END */
+
+
+/* MYPAGE START */
+#mybox {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.mybox-header{
+    width: 100%;
+    background-color: white !important;
+    color: black !important;
+    padding: 5px 10px !important;
+    border-radius: 5px !important;
+    text-align: center;
+}
+
+.mybox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mybox-content-left {
+    width: 45%;
+}
+
+.mybox-content-right {
+    width: 45%;
+}
+
+.mybox-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mybox-item img {
+    width: 45%;
+}
+
+.mybox-item img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+.report-item span {
+    display: inline !important;
+}
+
+.report-item div,
+.report-item p {
+    color: white !important;
+    font-weight: 700;
+}
+/* MYPAGE END */
